@@ -31,8 +31,7 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem consequuntur, fuga.
+              
             </motion.p>
           </div>
           {/* slider */}
