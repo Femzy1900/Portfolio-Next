@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const Avatar = () => {
-  return <div className="hidden xl:flex xl:max-w-none"><Image src={'/avatar.png'} width={737} height={678} alt="" className="translate-z-0 w-full h-full"/></div>;
+  return <div className="hidden rotate-[-22deg]  xl:flex xl:max-w-none w-[400px] h-[600px]"><Image src={'/femi.png'} width={300} height={300} alt="" className="translate-z-0 w-full h-full"/></div>;
 };
 
 export default Avatar;

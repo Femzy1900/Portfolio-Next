@@ -27,7 +27,9 @@ const Services = () => {
               exit="hidden"
               className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ut labore molestias cupiditate, delectus beatae quia nisi id totam tempora optio dignissimos libero magni itaque cum. Repellendus ullam molestias aut.
+              💻 Web application development: I specialize in building responsive and user-friendly web applications using technologies like React, Vue, Svelte, and more. I focus on creating interfaces that provide an exceptional user experience, following industry best practices for front-end development.
+              <br />
+              🔌 API development, integrations, and automations: I have experience in building and integrating APIs using technologies such as Node.js and Express. I ensure scalability, reliability, and ease of use in the APIs I develop. Additionally, I have expertise in automating processes using tools like Zapier and IFTTT.
             </motion.p>
           </div>
           <motion.div
