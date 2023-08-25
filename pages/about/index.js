@@ -184,7 +184,7 @@ const About = () => {
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
-                  key={id}
+                  key={itemIndex}
                   className={`${
                     index === itemIndex &&
                     "text-accent after:bg-accent after:w-[100%] after:transition-all after:duration-300"
