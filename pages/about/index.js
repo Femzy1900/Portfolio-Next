@@ -33,21 +33,21 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
-          <FaVuejs />,
-          <FaNodeJs />,
-          <FaAngular />
+          <FaHtml5 key=""/>,
+          <FaCss3 key="" />,
+          <FaJs key=""/>,
+          <FaReact key=""/>,
+          <SiNextdotjs key=""/>,
+          <SiFramer key=""/>,
+          <FaWordpress key=""/>,
+          <FaVuejs key=""/>,
+          <FaNodeJs key=""/>,
+          <FaAngular key=""/>
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiWix />, <SiSquarespace />, <SiShopify />, <SiMailchimp />],
+        icons: [<FaFigma key="" />, <SiAdobexd key=""/>, <SiWix key=""/>, <SiSquarespace key=""/>, <SiShopify key=""/>, <SiMailchimp key=""/>],
       },
     ],
   },
@@ -89,12 +89,12 @@ const aboutData = [
         stage: "2020",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Certified React Developer - YouAccel",
+        stage: "2021",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Certified Graphic Designer - A",
+        stage: "2023",
       },
     ],
   },
@@ -134,7 +134,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] text-[13px] md:text-[15px] mx-auto xl:mx-0 md:mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            I'm Adedokun Femi, a frontend engineer. I'm a student at Obafemi Awolowo University (OAU) studying Computer Science and Mathematics.When i'm not coding, i enjoy reading, watching animes. <br />
+            I amm Adedokun Femi, a frontend engineer. I am a student at Obafemi Awolowo University (OAU) studying Computer Science and Mathematics.When i amm not coding, i enjoy reading, watching animes. <br />
             <br />
             I am a Front-End Developer aspiring to be a Fullstack Developer and with 3 years of experience in tech and design, equipped with knowledge of various technologies to solve problems by building efficient solutions.
           </motion.p>
@@ -181,10 +181,10 @@ const About = () => {
           className=" flex flex-col w-full xl:max-w-[48%] h-[480px]"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-            {aboutData.map((item, itemIndex) => {
+            {aboutData.map((item, id) => {
               return (
                 <div
-                  key={itemIndex}
+                  key={id}
                   className={`${
                     index === itemIndex &&
                     "text-accent after:bg-accent after:w-[100%] after:transition-all after:duration-300"
@@ -203,12 +203,12 @@ const About = () => {
                   key={itemIndex}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
-                  <div className="flex gap-x-4">
+                  <div key={itemIndex} className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div key={itemIndex} className="hidden md:flex">-</div>
+                  <div key={itemIndex}>{item.stage}</div>
+                  <div key={itemIndex} className="flex gap-x-4">
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white">{icon}</div>;
+                      return <div key={itemIndex} className="text-2xl text-white">{icon}</div>;
                     })}
                   </div>
                 </div>

@@ -16,7 +16,7 @@ const Home = () => {
 
           <motion.h1 className="h1 text-[30px]" variants={fadeIn('down', 0.2)} initial="hidden" animate="show" exit="hidden">
             Hello,
-            <span className="text-accent"> I'm Femi</span>  
+            <span className="text-accent"> I am Femi</span>  
           </motion.h1>
           <motion.p variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden" className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 xl:mb-16 text-[30px] md:text-[50px]  text-white font-bold">
             A FRONT-END ENGINEER / DEVELOPER
